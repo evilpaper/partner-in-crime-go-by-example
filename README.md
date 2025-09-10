@@ -1,4 +1,4 @@
-# Go by Example Partner in Crime
+# Partner in Crime - Go by Example
 
 Companion repo for exploring Go with [Go by example](https://gobyexample.com/).
 
