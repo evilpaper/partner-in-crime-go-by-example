@@ -20,4 +20,16 @@ func main() {
 	case 3:
 		fmt.Println("three")
 	}
+
+	// This is nasty. But useful I guess.
+	// Switch statements can have multiple cases
+
+	switch time.Now().Weekday() {
+	case time.Saturday, time.Sunday:
+		fmt.Println("It's the weekend")
+	default:
+		fmt.Println("It's a weekday")
+	}
+
+	t := time.Now()
 }
