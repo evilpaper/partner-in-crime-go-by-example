@@ -5,6 +5,7 @@ package main
 
 import (
 	"fmt"
+	"time"
 )
 
 func main() {
@@ -23,7 +24,6 @@ func main() {
 
 	// This is nasty. But useful I guess.
 	// Switch statements can have multiple cases
-
 	switch time.Now().Weekday() {
 	case time.Saturday, time.Sunday:
 		fmt.Println("It's the weekend")
@@ -31,5 +31,14 @@ func main() {
 		fmt.Println("It's a weekday")
 	}
 
+	// swicth can behave like if/else. No expression.
 	t := time.Now()
+	switch {
+	case t.Hour() < 12:
+		fmt.Println("It's before noon")
+	default:
+		fmt.Println("It's after noon")
+	}
+
+	
 }
