@@ -22,4 +22,11 @@ func main() {
 	// Declare and initialize an array.
 	b := [5]int{1, 2, 3, 4, 5}
 	fmt.Println("dcl:", b)
+
+	// Let the compiler count the number of elements.
+	b = [...]int{1, 2, 3, 4, 5}
+	fmt.Println("dcl:", b)
+
+	b = [...]int{100, 3: 400, 500}
+	fmt.Println("idx:", b)
 }
