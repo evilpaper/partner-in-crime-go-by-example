@@ -24,5 +24,18 @@ func main() {
 	fmt.Println("set:", s)
 	fmt.Println("get:", s[2])
 
+	// len returns the length
 	fmt.Println("len:", len(s))
+
+	// append returns a new slice with the new element added.
+	s = append(s, "d")
+	s = append(s, "e", "f")
+	fmt.Println("apd:", s)
+
+	// copy copies elements from one slice to another.
+	c := make([]string,len(s))
+	copy(c, s)
+	fmt.Println("cpy:", c)
+
+
 }
