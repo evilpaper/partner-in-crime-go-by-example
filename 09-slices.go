@@ -58,4 +58,15 @@ func main() {
 	if slices.Equal(t, t2) {
 		fmt.Println("t and t2 are equal")
 	}
+
+	// multi-dimensional slices
+	twoD := make ([][]int, 3)
+	for i := range 3 {
+		innerLen := i + 1
+		twoD[i] = make([]int, innerLen)
+		for j := range innerLen {
+			twoD[i][j] = i + j
+		}
+	}
+	fmt.Println("2d: ", twoD)
 }
