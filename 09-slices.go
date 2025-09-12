@@ -1,6 +1,7 @@
 package main
 import (
 	"fmt"
+	"slices"
 )
 
 func main() {
@@ -37,5 +38,24 @@ func main() {
 	copy(c, s)
 	fmt.Println("cpy:", c)
 
+	// slice syntax
+	l := s[2:5]
+	fmt.Println("sl1:", l)
 
+	// slice up to (but excluding) index 5
+	l = s[:5]
+
+	// slice up from (and including) index 2
+	l = s[2:]
+	fmt.Println("sl3:", l)
+
+	// declare and initialize a slice in one line
+	t := []string{"g", "h", "i"}
+	fmt.Println("dcl:", t)
+
+	// slice package contains functions to manipulate slices
+	t2 := []string{"g", "h", "i"}
+	if slices.Equal(t, t2) {
+		fmt.Println("t and t2 are equal")
+	}
 }
