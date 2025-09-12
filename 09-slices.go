@@ -15,6 +15,14 @@ func main() {
 	// Create slice with non-zero length with make.
 	s = make([]string, 3)
 	fmt.Println("emp:", s, "len:", len(s), "cap:", cap(s))
-	
+	// len = length, cap = capacity
 
+	// Set and get values.
+	s[0] = "a"
+	s[1] = "b"
+	s[2] = "c"
+	fmt.Println("set:", s)
+	fmt.Println("get:", s[2])
+
+	fmt.Println("len:", len(s))
 }
