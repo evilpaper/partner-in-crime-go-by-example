@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"maps"
+)
 
 func main() {
 	// Maps are key-value pairs.
@@ -29,4 +32,19 @@ func main() {
 	// Delete a key/value pair with delete.
 	delete(m, "k2")
 	fmt.Println("map:", m)
+
+	// Check if a key exists with a two-value assignment.
+	// The optional second return value when getting a value from a map indicates if the key was present in the map.
+	_, prs := m["k2"]
+    fmt.Println("prs:", prs)
+
+	// Declare and initialize a map in a single line.
+	n := map[string]int{"foo": 1, "bar": 2}
+    fmt.Println("map:", n)
+
+	// maps package contains a number of useful utility functions.
+	n2 := map[string]int{"foo": 1, "bar": 2}
+    if maps.Equal(n, n2) {
+        fmt.Println("n == n2")
+    }
 }
