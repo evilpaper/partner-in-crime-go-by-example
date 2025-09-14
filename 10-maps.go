@@ -19,4 +19,14 @@ func main() {
 	// Get a value with name[key].
 	v1 := m["k1"]
 	fmt.Println("v1: ", v1)
+
+	// Return zero value if key doesn't exist.
+	fmt.Println("v3: ", m["k3"])
+
+	// len returns the number of key/value pairs.
+	fmt.Println("len:", len(m))
+
+	// Delete a key/value pair with delete.
+	delete(m, "k2")
+	fmt.Println("map:", m)
 }
