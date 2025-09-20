@@ -20,12 +20,23 @@ func zeroptr(iptr *int) {
 }
 
 func main() {
+	// i is 1, just like that
 	i := 1
 	fmt.Println("initial:", i)
 
+	// zeroval gets a copy of ival distinct from the one in the calling function.
+	// so i is still 1. 
+	// so zeroval doesn't change the i in the calling function.
+	// Don't get confused by the copy of ival and i.
 	zeroval(i)
 	fmt.Println("zeroval:", i)
 
+	// zeroptr has an *int parameter, so arguments will be passed to it by reference.
+	// zeroptr will get a pointer to the i in the calling function.
+	// so zeroptr can change the i in the calling function.
+	// Don't get confused by the pointer of iptr and i.
 	zeroptr(&i)
 	fmt.Println("zeroptr:", i)
+
+	fmt.Println("pointer:", &i)
 }
