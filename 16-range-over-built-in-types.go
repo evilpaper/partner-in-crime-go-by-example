@@ -29,4 +29,9 @@ func main() {
 	for k := range kvs {
 		fmt.Println("key:", k)
 	}
+
+	// Range over strings iterates over unicode code points.
+	for i, c := range "go" {
+		fmt.Println(i, c)
+	}
 }
