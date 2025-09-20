@@ -1,0 +1,24 @@
+package main
+
+import "fmt"
+
+// Go support pointers, allowing you to pass references to values and records within your program.
+// A pointer holds the memory address of a value.
+// The type *T is a pointer to a T value. Its zero value is nil.
+// The * operator denotes the pointer's underlying value.
+// The & operator generates a pointer to its operand. 
+
+// Pointers and Values are different things.
+// zeroval has an int parameter, so arguments will be passed to it by value.
+// zeroval will get a copy of ival distinct from the one in the calling function.
+func zeroval(ival int) {
+	ival = 0
+}
+
+func main() {
+	i := 1
+	fmt.Println("initial:", i)
+
+	zeroval(i)
+	fmt.Println("zeroval:", i)
+}

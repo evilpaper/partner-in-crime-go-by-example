@@ -17,7 +17,6 @@ func main() {
 			fmt.Println("index:", i)
 		}
 	}
-
 	
 	kvs := map[string]string{"a": "apple", "b": "banana"}
 	// Range on map iterates over key/value pairs.
@@ -30,7 +29,7 @@ func main() {
 		fmt.Println("key:", k)
 	}
 
-	// Range over strings iterates over unicode code points.
+	// Range over strings iterates over Unicode code points.
 	for i, c := range "go" {
 		fmt.Println(i, c)
 	}
