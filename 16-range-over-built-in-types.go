@@ -10,4 +10,11 @@ func main() {
 		sum += num
 	}
 	fmt.Println("sum:", sum)
+
+	// Range provide and both the index and value.
+	for i, num := range nums {
+		if num  == 3 {
+			fmt.Println("index:", i)
+		}
+	}
 }
