@@ -1,9 +1,9 @@
 package main
 
+import "fmt"
+
 // Go supports anonymous functions, which can form closures.
 // Anonymous functions are useful when you want to define a function inline without giving it a name.
-
-import "fmt"
 
 // This function returns another function.
 // The returned function closes over the variable i to form a closure.

@@ -2,9 +2,9 @@ package main
 
 import "fmt"
 
-func main() {
+// for is Go’s only looping construct
 
-	// for is Go’s only looping construct
+func main() {
  
 	// Basic loop, single condition
 	i := 1

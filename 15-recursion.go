@@ -1,8 +1,8 @@
 package main
 
-// Go supports recursive functions.
-
 import "fmt"
+
+// Go supports recursive functions.
 
 // This function calls itself until it reaches the base case.
 func fact(n int) int {

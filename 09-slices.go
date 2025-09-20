@@ -1,13 +1,14 @@
 package main
+
 import (
 	"fmt"
 	"slices"
 )
 
+// Slices are an important data type in Go, giving a more powerful interface to sequences than arrays.
+
 func main() {
 
-	// Slices are an important data type in Go, giving a more powerful interface to sequences than arrays.
-	
     // Slices are types by the elements they contain.
 	// Funky, similar syntax to arrays.
 	var s []string

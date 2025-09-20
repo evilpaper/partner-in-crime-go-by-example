@@ -1,9 +1,9 @@
-// Arrays are fixed length sequences of elements of the same type.
-// Slices are more common.
-
 package main
 
 import "fmt"
+
+// Arrays are fixed length sequences of elements of the same type.
+// Slices are more common.
 
 func main() {
 

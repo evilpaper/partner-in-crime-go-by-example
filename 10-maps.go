@@ -5,10 +5,11 @@ import (
 	"maps"
 )
 
+// Maps are key-value pairs.
+// Maps are Go's built-in associative data type
+// Called hashes or dicts in other languages.
+
 func main() {
-	// Maps are key-value pairs.
-	// Maps are Go's built-in associative data type
-	// Called hashes or dicts in other languages.
 
 	// Create a new map with make.
 	m := make(map[string]int)

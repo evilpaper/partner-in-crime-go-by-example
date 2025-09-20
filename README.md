@@ -8,7 +8,9 @@ Open the whole folder in your IDE of choice.
 
 Open the file you like to work on. Each file is a chapter.
 
-Run the file (chapter) from the command line. For example.
+Run the file (chapter) from the command line.
+
+For example.
 
 ```sh
 $ go run 01-hello-world.go
