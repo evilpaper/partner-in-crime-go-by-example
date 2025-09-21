@@ -18,4 +18,12 @@ func main() {
 	// Since strings are equivalent to []byte, this will
 	// produce the length of the raw bytes stored within.
 	fmt.Println("len:", len(s))
+
+	// Indexing into a string produces the raw byte values 
+	// at each index. This loop generates the hex values of
+	// all the bytes that constitute the code points in s.
+	for i := 0; i < len(s); i++ {
+		fmt.Printf("%x ", s[i])
+	}
+	fmt.Println()
 }
