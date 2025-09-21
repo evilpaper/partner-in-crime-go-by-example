@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"unicode/utf8"
+)
 
 // A Go string is a read-only slice of bytes.
 // Strings are treated as containers of text encoded in UTF-8.
@@ -26,4 +29,7 @@ func main() {
 		fmt.Printf("%x ", s[i])
 	}
 	fmt.Println()
+
+	// To count how many runes are in a string, we can use the utf8 package.
+	fmt.Println("Rune count:", utf8.RuneCountInString(s))
 }
