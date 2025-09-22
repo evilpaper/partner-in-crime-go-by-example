@@ -32,4 +32,9 @@ func main() {
 
 	// To count how many runes are in a string, we can use the utf8 package.
 	fmt.Println("Rune count:", utf8.RuneCountInString(s))
+
+	// Range loop decodes each UTF-8 sequence and provides the start position of the rune.
+	for idx, runeValue := range s {
+		fmt.Printf("%#U starts at %d\n", runeValue, idx)
+	}
 }
