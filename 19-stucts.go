@@ -1,0 +1,16 @@
+package main
+
+import "fmt"
+
+// Go’s structs are typed collections of fields.
+
+// This person struct type has name and age fields.
+type person struct {
+	name string
+	age int
+}
+
+func main() {
+	//This syntax creates a new struct.
+	fmt.Println(person{"Bob", 20})
+}
