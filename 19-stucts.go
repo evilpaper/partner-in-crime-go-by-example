@@ -17,4 +17,8 @@ func main() {
 
 	// Name the fields when initializing a struct.
 	fmt.Println(person{name: "Alice", age: 30})
+
+	// Omitted fields will be zero-valued.
+	fmt.Println(person{name: "Fred"})
+
 }
