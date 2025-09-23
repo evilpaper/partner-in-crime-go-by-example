@@ -11,6 +11,10 @@ type person struct {
 }
 
 func main() {
-	//This syntax creates a new struct.
+
+	// This syntax creates a new struct.
 	fmt.Println(person{"Bob", 20})
+
+	// Name the fields when initializing a struct.
+	fmt.Println(person{name: "Alice", age: 30})
 }
