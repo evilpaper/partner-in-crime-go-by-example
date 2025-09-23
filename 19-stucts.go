@@ -21,4 +21,6 @@ func main() {
 	// Omitted fields will be zero-valued.
 	fmt.Println(person{name: "Fred"})
 
+	// An & prefix yields a pointer to the struct.
+	fmt.Println(&person{name: "Ann", age: 40})
 }
