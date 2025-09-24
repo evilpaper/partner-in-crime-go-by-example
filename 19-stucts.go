@@ -10,6 +10,12 @@ type person struct {
 	age int
 }
 
+func newPerson(name string) *person {
+	p := person{name: name}
+	p.age = 42
+	return &p
+}
+
 func main() {
 
 	// This syntax creates a new struct.
@@ -23,4 +29,7 @@ func main() {
 
 	// An & prefix yields a pointer to the struct.
 	fmt.Println(&person{name: "Ann", age: 40})
+
+	// It’s idiomatic to encapsulate new struct creation in constructor functions
+	fmt.Println(newPerson("Jon"))
 }
