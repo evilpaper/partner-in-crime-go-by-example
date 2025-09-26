@@ -37,5 +37,7 @@ func main() {
 	s := person{name: "Sean", age: 50}
 	fmt.Println(s.name)
 
-
+	// Structs are mutable.
+	s.age = 51
+	fmt.Println(s.age)
 }
