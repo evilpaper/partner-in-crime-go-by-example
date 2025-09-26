@@ -32,4 +32,10 @@ func main() {
 
 	// It’s idiomatic to encapsulate new struct creation in constructor functions
 	fmt.Println(newPerson("Jon"))
+
+	// Access struct fields with a dot.
+	s := person{name: "Sean", age: 50}
+	fmt.Println(s.name)
+
+
 }
