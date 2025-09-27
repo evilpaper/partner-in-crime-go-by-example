@@ -9,6 +9,7 @@ type rect struct {
 }
 
 // This are method has a receiver type of *rect (a pointer to rect).
+// Remember * is the pointer operator.
 func (r *rect) area() int {
 	return r.width * r.height
 }
