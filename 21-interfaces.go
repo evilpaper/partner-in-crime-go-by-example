@@ -9,7 +9,7 @@ import (
 
 type geometry interface {
     area() float64
-    perim() float64
+   //  perim() float64
 }
 
 type rect struct {
