@@ -9,7 +9,7 @@ import "fmt"
 type ServerState int
 
 const (
-    StateIdle ServerState = iota // wtf!
+    StateIdle ServerState = iota // StateIdle now has a value of 0. wtf1! 
     StateConnected
     StateError
     StateRetrying
@@ -22,11 +22,15 @@ var stateName = map[ServerState]string{
     StateRetrying:  "retrying",
 }
 
+// String() method implements fmt.Stringer interface, overriding default string representation
+// This makes fmt.Println(StateIdle) print "idle" instead of "0"
 func (ss ServerState) String() string {
     return stateName[ss]
 }
 
 func main() {
+    fmt.Println(StateIdle) // Prints idle and not 0 since we overrode the default string representation. wtf2!
+
     ns := transition(StateIdle)
     fmt.Println(ns)
 
@@ -50,7 +54,7 @@ func transition(s ServerState) ServerState {
 
 /**
 
-wtf!
+wtf1!
 
 Go has a lot of“clever laziness”
 
@@ -87,5 +91,14 @@ Boom — automatic, elegant counting!
 
 iota is a Greek letter (ι) that basically means “the smallest thing” or “a tiny amount.”
 You can remember it by thinking “iota” > “I Ought’a Count” 
+
+wtf2!
+
+- When fmt.Println() tries to print StateIdle, it looks for a String() 
+method on the ServerState type
+
+- Go finds the String() method defined on lines 25-27
+
+- This String() method overides the default behavior and maps StateIdle to "idle" instead of "0"
 
 */
