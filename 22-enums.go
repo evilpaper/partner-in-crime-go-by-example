@@ -24,6 +24,8 @@ var stateName = map[ServerState]string{
 
 // String() method implements fmt.Stringer interface, overriding default string representation
 // This makes fmt.Println(StateIdle) print "idle" instead of "0"
+// Funky name, Stringer. You can read more about it here: https://go.dev/tour/methods/17
+
 func (ss ServerState) String() string {
     return stateName[ss]
 }
