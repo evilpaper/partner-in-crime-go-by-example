@@ -3,13 +3,14 @@ package main
 import "fmt"
 
 // An enum is a type that has a fixed number of possible values, each with a distinct name.
-// Go doesn’t have an enum type as a distinct language feature, but enums are simple to implement using existing language idioms.
+// Go doesn’t have an enum type as a distinct language feature.
+// But enums are simple to implement using existing language idioms.
 
 // Our enum type ServerState has an underlying int type.
 type ServerState int
 
 const (
-    StateIdle ServerState = iota // StateIdle now has a value of 0. wtf1! 
+    StateIdle ServerState = iota // StateIdle now has a value of 0. Wtf! 
     StateConnected
     StateError
     StateRetrying
@@ -31,7 +32,7 @@ func (ss ServerState) String() string {
 }
 
 func main() {
-    fmt.Println(StateIdle) // Prints idle and not 0 since we overrode the default string representation. wtf2!
+    fmt.Println(StateIdle) // Prints idle and not 0 since we overrode the default string representation. Wtf again!
 
     ns := transition(StateIdle)
     fmt.Println(ns)
@@ -56,9 +57,9 @@ func transition(s ServerState) ServerState {
 
 /**
 
-wtf1!
+wtf!
 
-Go has a lot of“clever laziness”
+Go has a lot of “clever laziness”
 
 When you write a const block like this:
 
@@ -94,7 +95,7 @@ Boom — automatic, elegant counting!
 iota is a Greek letter (ι) that basically means “the smallest thing” or “a tiny amount.”
 You can remember it by thinking “iota” > “I Ought’a Count” 
 
-wtf2!
+wtf again!
 
 - When fmt.Println() tries to print StateIdle, it looks for a String() 
 method on the ServerState type
