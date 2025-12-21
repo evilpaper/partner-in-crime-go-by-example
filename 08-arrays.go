@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 // Arrays are fixed length sequences of elements of the same type.
-// Slices are more common.
+// Slices are more common. 
 
 func main() {
 
@@ -52,4 +52,15 @@ func main() {
 	{1, 2, 3},
    }
    fmt.Println("2d: ", twoD)
+
+
+   // Why use array over slice?
+   // 1. Map keys
+   // Arrays are comparable, to they can be map keys. Slices cannot:
+   coords := map[[2]int]string{
+	{0, 0}: "Origin",
+	{1, 2}: "Point 1",
+   }
+   fmt.Println("coords: ", coords)
+
 }

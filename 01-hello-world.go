@@ -15,8 +15,8 @@ func main() {
 	fmt.Println("Hello world!")
 }
 
-// Explain this like I am 5 years old.
-// ------------------------------------
+// Explain this like I am 5 years old
+// ----------------------------------
 // This is a program that prints "Hello world!" to the console.
 // package main — Declares this is an executable program (not a library). It tells Go this package can be built into a runnable binary.
 // func main() — The entry point where execution starts. When you run the program, Go calls main().
