@@ -1,21 +1,19 @@
-// Our first program will print the classic "hello world"
-// message. Here's the full source code.
+// Our first program will print the classic "hello world" message.
 
 // All Go files start with a package declaration.
-// main package is the entry point of the program.
+// The main package marks the entry point of the program.
 package main
 
-// import packages we need.
+// We then import packages we need.
 import "fmt"
 
-// main function is the entry point of the program.
-// It's the first function that is executed when the program runs.
+// We can then declare the main function. The entry point of the program.
+// It's the function the Go compiler will look for first when the program runs.
 func main() {
 	// Println is a function that prints a string to the console.
 	fmt.Println("Hello world!")
 }
 
-// Explain this like I am 5 years old
 // ----------------------------------
 // This is a program that prints "Hello world!" to the console.
 // package main — Declares this is an executable program (not a library). It tells Go this package can be built into a runnable binary.

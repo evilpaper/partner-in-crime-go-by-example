@@ -14,7 +14,6 @@ func main() {
     fmt.Println(!true)
 }
 
-// Explain this like I am 5 years old
 // ----------------------------------
 // This program is like a magic box that shows us different types of things:
 //
