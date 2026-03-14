@@ -4,7 +4,7 @@ import "fmt"
 
 func main() {
 
-	// Ok the main setup is done. What should we do here? W e talk values right?
+	// Ok the main setup is done. What should we do here? We talk about values right?
 	// Yes! Go has values. The regular values like strings, integers, floats, booleans, and more.
 	// Let's print some of them and see what they are.
 
