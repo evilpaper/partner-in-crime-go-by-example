@@ -17,4 +17,8 @@ func main() {
 	// We can declare a variable without initializing it.
 	var d int
 	fmt.Println(d)
+
+	// We can declare a variable with a short assignment statement.
+	f := "apple"
+	fmt.Println(f)
 }
