@@ -3,7 +3,9 @@ package main
 import "fmt"
 
 func main() {
+
 	// Ok, lets do this. We talk about constants.
+	
 	// Go support constants. Constants are like variables, but they cannot be changed.
 	
 	// Constants are declared using the const keyword.
