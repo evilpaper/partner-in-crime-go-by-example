@@ -17,6 +17,11 @@ func main() {
 	} else {
 		fmt.Println("7 is odd")
 	}
+
+	// Logical operators like && and || are often useful in conditions.
+	if 8%2 == 0 || 7%2 == 0 {
+		fmt.Println("Either 8 or 7 are even. Guess which?")
+	}
 }
 
 // Done! As ususal run it from the command line with go run <path to the file>
