@@ -16,4 +16,24 @@ func main() {
 
 	var a = [5]int{1, 2, 3, 4, 5}
 	fmt.Println("a: ", a)
+
+	// Whats more about arrays?
+	// Arrays are one dimensional, but can be composed to form multidimensional arrays.
+	// First an array with two items, each item is an array with three items.
+	var twoD [2][3]int
+	for i := range 2 {
+		for j := range 3 {
+			twoD[i][j] = i + j
+		}
+	}
+	fmt.Println("2d: ", twoD)
+
+	// Initialize a 2D array with a shorter syntax.
+	twoD = [2][3]int{
+		{1, 2, 3},
+		{1, 2, 3},
+	}
+	fmt.Println("2d: ", twoD)
+
+	// Why use array over slice?
 }
