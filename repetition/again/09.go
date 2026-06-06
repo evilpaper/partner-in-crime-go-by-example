@@ -22,5 +22,12 @@ func main() {
 	// The make() function is one of Go's built-in tools used primarily for memory allocation and initialization.
 	s = make([]string, 3)
 	fmt.Println("emp:", s, "len:", len(s), "cap:", cap(s))
+
+	// Create a slice with some values.
+	var pizzaSlices = []string{"Pepperoni", "Road to Napoli", "Goodfellas"}
+
+	// We can set and get just like with arrays.
+	pizzaSlices[2] = "Donnie Brasco"
 	
+	fmt.Println("pizzaSlices:", pizzaSlices)
 }
