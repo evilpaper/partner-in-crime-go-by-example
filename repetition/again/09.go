@@ -17,6 +17,9 @@ func main() {
 	fmt.Println("uninit slice:", s, s == nil, len(s) == 0)
 
 	// Create a slice with make.
+	// What is make? It is a built-in function that creates a new slice.
+	// Can I use make for other things? Yes, you can use make for other things like maps and channels.
+	// The make() function is one of Go's built-in tools used primarily for memory allocation and initialization.
 	s = make([]string, 3)
 	fmt.Println("emp:", s, "len:", len(s), "cap:", cap(s))
 	
