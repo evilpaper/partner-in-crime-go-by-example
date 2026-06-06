@@ -37,7 +37,7 @@ func main() {
 
 	// Why use array over slice?
 	// 1. Map keys
-	// Arrays are comparable, to they can be map keys. Slices cannot:
+	// Arrays are comparable, so they can be map keys. Slices cannot:
 	coords := map[[2]int]string{
 		{0, 0}: "Origin",
 		{1, 2}: "Point 1",
